@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="-359.4202898550725" y="1191.9642857142856"/>
         </scene>
-        <!--Our Businesses-->
+        <!--Our Business-->
         <scene sceneID="wuF-UP-CfS">
             <objects>
-                <tableViewController id="g1F-HO-yha" sceneMemberID="viewController">
+                <tableViewController id="g1F-HO-yha" customClass="BusinessTableViewController" customModule="_all" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="apX-ts-zwl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@
                             <outlet property="delegate" destination="g1F-HO-yha" id="YQW-Bg-ckm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Our Businesses" id="MoG-Ce-dlG"/>
+                    <navigationItem key="navigationItem" title="Our Business" id="MoG-Ce-dlG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozo-NH-YYS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
