@@ -23,7 +23,8 @@
 		1997B52F258514420024ED46 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1997B529258514420024ED46 /* img3.png */; };
 		1997B530258514420024ED46 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1997B52A258514420024ED46 /* img2.png */; };
 		1997B531258514420024ED46 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1997B52B258514420024ED46 /* img1.png */; };
-		1997B539258521170024ED46 /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1997B538258521170024ED46 /* img4.png */; };
+		1997B5402585690F0024ED46 /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1997B53F2585690E0024ED46 /* img4.png */; };
+		1997B54225864B200024ED46 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1997B54125864B200024ED46 /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +46,8 @@
 		1997B529258514420024ED46 /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
 		1997B52A258514420024ED46 /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
 		1997B52B258514420024ED46 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
-		1997B538258521170024ED46 /* img4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img4.png; sourceTree = "<group>"; };
+		1997B53F2585690E0024ED46 /* img4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img4.png; sourceTree = "<group>"; };
+		1997B54125864B200024ED46 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				197C810525842969004658D6 /* BlogViewController.swift */,
 				197C810725842D5E004658D6 /* BusinessTableViewController.swift */,
+				1997B54125864B200024ED46 /* ContactViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -114,9 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				1997B526258514420024ED46 /* img5.png */,
-				1997B538258521170024ED46 /* img4.png */,
 				1997B528258514420024ED46 /* img6.png */,
 				1997B529258514420024ED46 /* img3.png */,
+				1997B53F2585690E0024ED46 /* img4.png */,
 				1997B52A258514420024ED46 /* img2.png */,
 				1997B52B258514420024ED46 /* img1.png */,
 			);
@@ -225,7 +228,7 @@
 			files = (
 				197C80F825841EE1004658D6 /* LaunchScreen.storyboard in Resources */,
 				1997B531258514420024ED46 /* img1.png in Resources */,
-				1997B539258521170024ED46 /* img4.png in Resources */,
+				1997B5402585690F0024ED46 /* img4.png in Resources */,
 				1997B530258514420024ED46 /* img2.png in Resources */,
 				1997B52E258514420024ED46 /* img6.png in Resources */,
 				1997B52F258514420024ED46 /* img3.png in Resources */,
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				197C80EC25841ED8004658D6 /* AppDelegate.swift in Sources */,
+				1997B54225864B200024ED46 /* ContactViewController.swift in Sources */,
 				197C810825842D5E004658D6 /* BusinessTableViewController.swift in Sources */,
 				1997B5202584F8750024ED46 /* BusinessDAO.swift in Sources */,
 				197C80EE25841ED8004658D6 /* SceneDelegate.swift in Sources */,
