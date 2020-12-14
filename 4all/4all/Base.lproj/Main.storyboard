@@ -357,7 +357,7 @@
         <scene sceneID="Bqq-Kt-hKj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f8t-WS-PNB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="4.alt.square.fill" catalog="system" id="PCA-ie-bbD"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="4.alt.square" catalog="system" id="PCA-ie-bbD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BT1-CT-ZXz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -376,7 +376,7 @@
         <scene sceneID="kDh-Mm-XVm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Ck-oR-GbZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Business" id="a66-2Q-Ago"/>
+                    <tabBarItem key="tabBarItem" title="Business" image="bag" catalog="system" id="a66-2Q-Ago"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Oh2-y8-6Pj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -395,7 +395,7 @@
         <scene sceneID="vKl-Ik-dM8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lnX-az-e8W" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Blog" id="VHj-of-ZTP"/>
+                    <tabBarItem key="tabBarItem" title="Blog" image="b.circle" catalog="system" id="VHj-of-ZTP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3X3-Vj-rsx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -414,7 +414,7 @@
         <scene sceneID="0mO-Ki-3Vd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fWs-Yx-C9B" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" id="A2g-of-WIU"/>
+                    <tabBarItem key="tabBarItem" title="About" image="person.circle" catalog="system" id="A2g-of-WIU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xzn-19-pfC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -433,7 +433,7 @@
         <scene sceneID="0hP-ZO-6o7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hjj-H2-4pG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contact" id="l4s-SR-am2"/>
+                    <tabBarItem key="tabBarItem" title="Contact" image="envelope" catalog="system" id="l4s-SR-am2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OFh-29-uIZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -450,8 +450,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="4.alt.square.fill" catalog="system" width="128" height="114"/>
+        <image name="4.alt.square" catalog="system" width="128" height="114"/>
         <image name="4all logo" width="162" height="192"/>
         <image name="about.jpg" width="1280" height="720"/>
+        <image name="b.circle" catalog="system" width="128" height="121"/>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="envelope" catalog="system" width="128" height="93"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>
