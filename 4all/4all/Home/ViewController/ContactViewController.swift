@@ -8,16 +8,18 @@
 
 import UIKit
 
-class ContactViewController: UIViewController, UITextFieldDelegate{
+class ContactViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        let Tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyBord))
-        view.addGestureRecognizer(Tap)
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyBord))
+        view.addGestureRecognizer(tap)
     }
-    @objc func DismissKeyBord(){
+    
+    @objc private func dismissKeyBord() {
         view.endEditing(true)
     }
+    
 }
 

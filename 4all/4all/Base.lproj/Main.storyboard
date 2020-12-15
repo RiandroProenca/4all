@@ -56,7 +56,7 @@
                         <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="separatorInset" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="175" id="y83-vC-vls" customClass="TableViewCell" customModule="_all" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="175" id="y83-vC-vls" customClass="BusinessTableViewCell" customModule="_all" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="175"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y83-vC-vls" id="Pxe-E6-6rf">
@@ -98,21 +98,14 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outlet property="imageBusiness" destination="qgU-P5-3wq" id="5xl-hV-Iys"/>
-                                    <outlet property="labelDescrition" destination="UqZ-on-cVY" id="W7R-vA-qRX"/>
-                                    <outlet property="labelTitle" destination="kFd-93-qiJ" id="5r7-HC-6hI"/>
+                                    <outlet property="businessImageView" destination="qgU-P5-3wq" id="139-dW-QMU"/>
+                                    <outlet property="descritionLabel" destination="UqZ-on-cVY" id="rdJ-kn-0AM"/>
+                                    <outlet property="titleLabel" destination="kFd-93-qiJ" id="1gb-Rs-aFQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="g1F-HO-yha" id="Zzf-Ze-ndY"/>
-                            <outlet property="delegate" destination="g1F-HO-yha" id="YQW-Bg-ckm"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Our Business" id="MoG-Ce-dlG"/>
-                    <connections>
-                        <outlet property="tableBusiness" destination="apX-ts-zwl" id="2kh-zH-yWt"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozo-NH-YYS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,20 +180,20 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nossa Historia " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbI-N9-4P1">
-                                <rect key="frame" x="20" y="608" width="170" height="27"/>
+                                <rect key="frame" x="20" y="607.5" width="170" height="27"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u37-jg-ufw">
-                                <rect key="frame" x="0.0" y="657" width="414" height="142.5"/>
+                                <rect key="frame" x="0.0" y="656.5" width="414" height="142.5"/>
                                 <string key="text">Desde 2015, a 4all vem propondo uma nova perspectiva para o mercado de soluções de data driven marketing,  marketplace e payments and baking. Hoje, atuando sob a lógica de ecossistema, conta com 8 empresas, além de negócios digitais que compartilham muito mais do que espaço fisico (e agora digital).</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espero fazer parte deste time em breve !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWb-bU-z07">
-                                <rect key="frame" x="92" y="592" width="231" height="15"/>
+                                <rect key="frame" x="92" y="592" width="231" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -247,7 +240,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deixe sua mensagem, em seguida a gente responde" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMX-nU-E2G">
-                                <rect key="frame" x="16" y="88" width="382" height="62.5"/>
+                                <rect key="frame" x="16" y="108" width="382" height="62.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -303,7 +296,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contato@4all.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIk-9J-NJC">
-                                <rect key="frame" x="260" y="598" width="119" height="17"/>
+                                <rect key="frame" x="259" y="598" width="120" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -357,6 +350,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ynr-Pn-BPT" firstAttribute="leading" secondItem="L7l-4s-PuV" secondAttribute="leading" constant="152" id="1YX-jD-Xbr"/>
+                            <constraint firstItem="hRK-tw-f3n" firstAttribute="top" secondItem="pMX-nU-E2G" secondAttribute="bottom" constant="26.5" id="4hS-my-iOe"/>
                             <constraint firstItem="Y59-KP-QwN" firstAttribute="leading" secondItem="L7l-4s-PuV" secondAttribute="leading" constant="22" id="5fQ-Li-6Hd"/>
                             <constraint firstItem="fp6-bI-AYj" firstAttribute="leading" secondItem="L7l-4s-PuV" secondAttribute="leading" constant="20" id="69B-Kp-kyq"/>
                             <constraint firstItem="bIX-iI-jKo" firstAttribute="top" secondItem="fp6-bI-AYj" secondAttribute="bottom" constant="19" id="75K-UP-xfj"/>
@@ -367,6 +361,7 @@
                             <constraint firstItem="L7l-4s-PuV" firstAttribute="trailing" secondItem="Gcc-gJ-Igk" secondAttribute="trailing" constant="20" id="NEb-DP-vXf"/>
                             <constraint firstItem="JdK-9F-P7A" firstAttribute="leading" secondItem="L7l-4s-PuV" secondAttribute="leading" constant="22" id="NoZ-EZ-9hA"/>
                             <constraint firstItem="L7l-4s-PuV" firstAttribute="trailing" secondItem="fp6-bI-AYj" secondAttribute="trailing" constant="20" id="OQr-Xr-CpJ"/>
+                            <constraint firstItem="L7l-4s-PuV" firstAttribute="trailing" secondItem="pMX-nU-E2G" secondAttribute="trailing" constant="16" id="OxB-Xd-J95"/>
                             <constraint firstItem="rW8-QI-P83" firstAttribute="top" secondItem="Gcc-gJ-Igk" secondAttribute="bottom" constant="79" id="QCk-Ne-xop"/>
                             <constraint firstItem="gJt-fz-2HG" firstAttribute="top" secondItem="kBX-ss-02r" secondAttribute="bottom" constant="3" id="Udm-Hu-lYh"/>
                             <constraint firstItem="L7l-4s-PuV" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gJt-fz-2HG" secondAttribute="trailing" symbolic="YES" id="Vw5-j6-MpZ"/>
@@ -374,22 +369,22 @@
                             <constraint firstItem="wIk-9J-NJC" firstAttribute="top" secondItem="rW8-QI-P83" secondAttribute="bottom" constant="15" id="WoB-eV-kxf"/>
                             <constraint firstItem="NoZ-Kj-Fxt" firstAttribute="top" secondItem="Y59-KP-QwN" secondAttribute="bottom" constant="5" id="a8w-Nm-PLt"/>
                             <constraint firstItem="fp6-bI-AYj" firstAttribute="top" secondItem="hRK-tw-f3n" secondAttribute="bottom" constant="22" id="afj-6I-RcO"/>
-                            <constraint firstItem="pMX-nU-E2G" firstAttribute="leading" secondItem="L7l-4s-PuV" secondAttribute="leading" constant="16" id="etN-vl-sId"/>
                             <constraint firstItem="ynr-Pn-BPT" firstAttribute="top" secondItem="Gcc-gJ-Igk" secondAttribute="bottom" constant="8" id="fLU-66-QHt"/>
                             <constraint firstItem="L7l-4s-PuV" firstAttribute="trailing" secondItem="wIk-9J-NJC" secondAttribute="trailing" constant="35" id="hFp-6r-Dgy"/>
+                            <constraint firstItem="pMX-nU-E2G" firstAttribute="top" secondItem="L7l-4s-PuV" secondAttribute="top" constant="20" id="hHM-UU-sjq"/>
                             <constraint firstItem="UdM-9A-ael" firstAttribute="top" secondItem="NoZ-Kj-Fxt" secondAttribute="bottom" constant="3" id="htc-Th-TTG"/>
-                            <constraint firstItem="hRK-tw-f3n" firstAttribute="top" secondItem="pMX-nU-E2G" secondAttribute="bottom" constant="46.5" id="hu5-bg-MTb"/>
                             <constraint firstItem="L7l-4s-PuV" firstAttribute="trailing" secondItem="ynr-Pn-BPT" secondAttribute="trailing" constant="151" id="iNY-je-CJ6"/>
+                            <constraint firstItem="rW8-QI-P83" firstAttribute="centerX" secondItem="wIk-9J-NJC" secondAttribute="centerX" id="lkt-Yo-TOA"/>
+                            <constraint firstItem="wIk-9J-NJC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UdM-9A-ael" secondAttribute="trailing" constant="8" symbolic="YES" id="luK-Vh-2U5"/>
                             <constraint firstItem="gJt-fz-2HG" firstAttribute="leading" secondItem="L7l-4s-PuV" secondAttribute="leading" constant="20" id="ma2-yt-8lm"/>
                             <constraint firstItem="L7l-4s-PuV" firstAttribute="trailing" secondItem="bIX-iI-jKo" secondAttribute="trailing" constant="20" id="mjZ-jb-GDO"/>
                             <constraint firstItem="UdM-9A-ael" firstAttribute="top" secondItem="NoZ-Kj-Fxt" secondAttribute="bottom" constant="3" id="nPF-MD-6mc"/>
                             <constraint firstItem="Gcc-gJ-Igk" firstAttribute="leading" secondItem="L7l-4s-PuV" secondAttribute="leading" constant="22" id="qax-FP-jR4"/>
                             <constraint firstItem="L7l-4s-PuV" firstAttribute="trailing" secondItem="hRK-tw-f3n" secondAttribute="trailing" constant="20" id="r8H-zH-24c"/>
                             <constraint firstItem="Y59-KP-QwN" firstAttribute="top" secondItem="Gcc-gJ-Igk" secondAttribute="bottom" constant="79" id="ruz-P7-kp6"/>
-                            <constraint firstItem="L7l-4s-PuV" firstAttribute="trailing" secondItem="pMX-nU-E2G" secondAttribute="trailing" constant="16" id="sw5-Bn-HDd"/>
                             <constraint firstItem="NoZ-Kj-Fxt" firstAttribute="leading" secondItem="L7l-4s-PuV" secondAttribute="leading" constant="20" id="t8n-5M-d6O"/>
                             <constraint firstItem="hRK-tw-f3n" firstAttribute="leading" secondItem="L7l-4s-PuV" secondAttribute="leading" constant="20" id="tYh-ER-i52"/>
-                            <constraint firstItem="pMX-nU-E2G" firstAttribute="top" secondItem="L7l-4s-PuV" secondAttribute="top" id="uri-uV-bg9"/>
+                            <constraint firstItem="pMX-nU-E2G" firstAttribute="leading" secondItem="L7l-4s-PuV" secondAttribute="leading" constant="16" id="voz-9K-0Yi"/>
                             <constraint firstItem="kBX-ss-02r" firstAttribute="leading" secondItem="L7l-4s-PuV" secondAttribute="leading" constant="22" id="yOs-fa-gw8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L7l-4s-PuV"/>

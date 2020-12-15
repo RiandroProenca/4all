@@ -6,17 +6,10 @@
 //  Copyright © 2020 Hub 4all. All rights reserved.
 //
 
-import UIKit
+struct Business {
 
-class Business: NSObject {
-    
-    let title:String
-    let descrition:String
-    let imageway:String
-    
-    init(businessTitle:String,descrition:String,imageway:String) {
-        self.title = businessTitle
-        self.descrition = descrition
-        self.imageway = imageway
-    }
+    let title: String
+    let descrition: String
+    let imageway: String
+
 }

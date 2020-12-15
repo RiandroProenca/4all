@@ -9,30 +9,32 @@
 import UIKit
 
 class BusinessTableViewController: UITableViewController {
-    
-    @IBOutlet var tableBusiness: UITableView!
-    
-    let listBusiness: Array<Business> = BusinessDAO().returnAllBusiness()
+
+    private var listBusiness: [Business] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableBusiness.dataSource = self
-        self.tableBusiness.delegate = self
-    }
-    // MARK: - Table view data source
 
+        loadBusiness()
+    }
+    
+    private func loadBusiness() {
+        listBusiness = BusinessDAO().returnAllBusiness()
+    }
+    
+    // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listBusiness.count
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-        
-        let businessIndx = listBusiness[indexPath.row]
-        cell.labelTitle.text = businessIndx.title
-        cell.labelDescrition.text = businessIndx.descrition
-        cell.imageView?.image = UIImage(named: businessIndx.imageway)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? BusinessTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.configure(with: listBusiness[indexPath.row])
         return cell
     }
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 175
     }

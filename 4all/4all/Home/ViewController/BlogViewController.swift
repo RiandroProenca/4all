@@ -23,5 +23,4 @@ class BlogViewController: UIViewController {
         guard let url = URL(string: "https://4all.com/blog/") else { return }
         webView.load(URLRequest(url: url))
     }
-
 }
