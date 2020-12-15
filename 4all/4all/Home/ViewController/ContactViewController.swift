@@ -13,11 +13,12 @@ class ContactViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyBord))
+        view.addGestureRecognizer(tap)
     }
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    
+    @objc private func dismissKeyBord() {
         view.endEditing(true)
     }
-
+    
 }
-
