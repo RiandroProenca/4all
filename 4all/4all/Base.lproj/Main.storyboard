@@ -123,18 +123,24 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="L36-f0-qE5">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="FCI-jc-37u" firstAttribute="leading" secondItem="EOE-6p-blN" secondAttribute="leading" id="5eg-Hx-AtO"/>
                             <constraint firstItem="FCI-jc-37u" firstAttribute="top" secondItem="EOE-6p-blN" secondAttribute="top" id="Njl-vi-qV7"/>
                             <constraint firstItem="EOE-6p-blN" firstAttribute="bottom" secondItem="FCI-jc-37u" secondAttribute="bottom" id="QnK-E6-DMj"/>
+                            <constraint firstItem="L36-f0-qE5" firstAttribute="centerY" secondItem="9iG-vC-i9r" secondAttribute="centerY" id="SQ5-am-RtI"/>
+                            <constraint firstItem="L36-f0-qE5" firstAttribute="centerX" secondItem="9iG-vC-i9r" secondAttribute="centerX" id="X0h-bO-d2G"/>
                             <constraint firstItem="EOE-6p-blN" firstAttribute="trailing" secondItem="FCI-jc-37u" secondAttribute="trailing" id="xFy-bJ-lki"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EOE-6p-blN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Blog" id="8zk-UG-DEC"/>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="L36-f0-qE5" id="ueI-83-9gu"/>
                         <outlet property="webView" destination="FCI-jc-37u" id="HGh-xP-P0L"/>
                     </connections>
                 </viewController>

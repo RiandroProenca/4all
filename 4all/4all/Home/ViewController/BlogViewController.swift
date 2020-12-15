@@ -12,7 +12,8 @@ import WebKit
 class BlogViewController: UIViewController {
 
     @IBOutlet private weak var webView: WKWebView!
-
+    @IBOutlet private weak var activityIndicatorView: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,15 @@ class BlogViewController: UIViewController {
 
     private func loadWebView() {
         guard let url = URL(string: "https://4all.com/blog/") else { return }
+        webView.navigationDelegate = self
         webView.load(URLRequest(url: url))
     }
+}
+
+extension BlogViewController: WKNavigationDelegate {
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        activityIndicatorView.stopAnimating()
+    }
+    
 }
