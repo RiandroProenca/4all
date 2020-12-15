@@ -143,89 +143,107 @@
             <point key="canvasLocation" x="1006" y="1191"/>
         </scene>
         <!--About-->
-        <scene sceneID="vs5-Iz-mVR">
+        <scene sceneID="MoC-TL-fmf">
             <objects>
-                <viewController id="JBg-rp-CmY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9xT-CO-0xg">
+                <viewController id="S4N-XR-fSV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kZ9-a1-7YC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOMOS UMA VENTURE BUILDER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcQ-Fb-iA1">
-                                <rect key="frame" x="18" y="90" width="380" height="67.5"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="29"/>
-                                <color key="textColor" red="0.25488090930000001" green="0.3568778601" blue="0.86543388990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transformamos grandes empresas e desenvolvemos startups. Nosso propósito é revolucionar mercados e impactar pessoas." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nI-hD-9ea">
-                                <rect key="frame" x="17" y="174" width="382" height="125"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU6-MW-9i2">
-                                <rect key="frame" x="0.0" y="311" width="414" height="54"/>
-                                <string key="text">Nosso Negócio dividem o propósito de oferecer produtos e serviços relevantes com presença na jornada diária de milhões de pessoas.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="gpk-BG-qvb">
-                                <rect key="frame" x="0.0" y="376" width="414" height="205"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hh-db-uJE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vgf-9P-UZR">
+                                        <rect key="frame" x="8" y="0.0" width="398" height="740"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOMOS UMA VENTURE BUILDER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aW-yO-shw">
+                                                <rect key="frame" x="0.0" y="0.0" width="398" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="Ht8-E5-TS5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="29"/>
+                                                <color key="textColor" red="0.25488090930000001" green="0.3568778601" blue="0.86543388990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transformamos grandes empresas e desenvolvemos startups. Nosso propósito é revolucionar mercados e impactar pessoas." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Win-LV-7q0">
+                                                <rect key="frame" x="0.0" y="90" width="398" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="spW-Sn-UxL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tET-1Q-H0q">
+                                                <rect key="frame" x="0.0" y="230" width="398" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="vWu-p8-xw3"/>
+                                                </constraints>
+                                                <string key="text">Nosso Negócio dividem o propósito de oferecer produtos e serviços relevantes com presença na jornada diária de milhões de pessoas.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="icE-Lx-4xl">
+                                                <rect key="frame" x="0.0" y="300" width="398" height="205"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="205" id="aCu-yt-U9x"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espero fazer parte deste time em breve !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xp-5Y-qpo">
+                                                <rect key="frame" x="0.0" y="505" width="398" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="LhT-kt-ATd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nossa Historia " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBg-W3-Mie">
+                                                <rect key="frame" x="0.0" y="525" width="398" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="7qp-vN-oaa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="o5m-HF-WK7">
+                                                <rect key="frame" x="0.0" y="575" width="398" height="165"/>
+                                                <string key="text">Desde 2015, a 4all vem propondo uma nova perspectiva para o mercado de soluções de data driven marketing,  marketplace e payments and baking. Hoje, atuando sob a lógica de ecossistema, conta com 8 empresas, além de negócios digitais que compartilham muito mais do que espaço fisico (e agora digital).</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="740" id="Exn-sS-ukR"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="205" id="6R9-hV-vh8"/>
+                                    <constraint firstAttribute="bottom" secondItem="vgf-9P-UZR" secondAttribute="bottom" id="0HH-cz-Mb0"/>
+                                    <constraint firstItem="vgf-9P-UZR" firstAttribute="leading" secondItem="8Hh-db-uJE" secondAttribute="leading" constant="8" id="BzD-Dp-cpW"/>
+                                    <constraint firstItem="vgf-9P-UZR" firstAttribute="top" secondItem="8Hh-db-uJE" secondAttribute="top" id="aAF-7p-rqj"/>
+                                    <constraint firstAttribute="trailing" secondItem="vgf-9P-UZR" secondAttribute="trailing" constant="8" id="hCA-JB-iz6"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nossa Historia " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbI-N9-4P1">
-                                <rect key="frame" x="20" y="607.5" width="170" height="27"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u37-jg-ufw">
-                                <rect key="frame" x="0.0" y="656.5" width="414" height="142.5"/>
-                                <string key="text">Desde 2015, a 4all vem propondo uma nova perspectiva para o mercado de soluções de data driven marketing,  marketplace e payments and baking. Hoje, atuando sob a lógica de ecossistema, conta com 8 empresas, além de negócios digitais que compartilham muito mais do que espaço fisico (e agora digital).</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Espero fazer parte deste time em breve !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWb-bU-z07">
-                                <rect key="frame" x="92" y="592" width="231" height="14.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nbI-N9-4P1" firstAttribute="leading" secondItem="vin-kz-NbM" secondAttribute="leading" constant="20" id="3mP-bR-tol"/>
-                            <constraint firstItem="uU6-MW-9i2" firstAttribute="top" secondItem="5nI-hD-9ea" secondAttribute="bottom" constant="12" id="5Le-Xy-yRH"/>
-                            <constraint firstItem="vin-kz-NbM" firstAttribute="trailing" secondItem="5nI-hD-9ea" secondAttribute="trailing" constant="15" id="5kw-tz-57f"/>
-                            <constraint firstItem="XcQ-Fb-iA1" firstAttribute="top" secondItem="vin-kz-NbM" secondAttribute="top" constant="2" id="94O-lE-kdx"/>
-                            <constraint firstItem="gpk-BG-qvb" firstAttribute="trailing" secondItem="vin-kz-NbM" secondAttribute="trailing" id="EEX-WM-iwV"/>
-                            <constraint firstItem="uU6-MW-9i2" firstAttribute="trailing" secondItem="vin-kz-NbM" secondAttribute="trailing" id="FTS-Vb-Bzc"/>
-                            <constraint firstItem="uU6-MW-9i2" firstAttribute="leading" secondItem="vin-kz-NbM" secondAttribute="leading" id="Iai-dZ-jvf"/>
-                            <constraint firstItem="nbI-N9-4P1" firstAttribute="top" secondItem="eWb-bU-z07" secondAttribute="bottom" constant="1" id="Kyo-ht-r5c"/>
-                            <constraint firstItem="u37-jg-ufw" firstAttribute="leading" secondItem="vin-kz-NbM" secondAttribute="leading" id="Q74-qr-rY4"/>
-                            <constraint firstItem="eWb-bU-z07" firstAttribute="leading" secondItem="vin-kz-NbM" secondAttribute="leading" constant="92" id="hoL-Th-QgD"/>
-                            <constraint firstItem="XcQ-Fb-iA1" firstAttribute="leading" secondItem="vin-kz-NbM" secondAttribute="leading" constant="18" id="jbE-vP-A42"/>
-                            <constraint firstItem="vin-kz-NbM" firstAttribute="trailing" secondItem="eWb-bU-z07" secondAttribute="trailing" constant="91" id="nuR-1n-cuQ"/>
-                            <constraint firstItem="5nI-hD-9ea" firstAttribute="leading" secondItem="vin-kz-NbM" secondAttribute="leading" constant="17" id="pje-dp-nEe"/>
-                            <constraint firstItem="u37-jg-ufw" firstAttribute="top" secondItem="nbI-N9-4P1" secondAttribute="bottom" constant="22" id="pqr-fC-gaK"/>
-                            <constraint firstItem="gpk-BG-qvb" firstAttribute="top" secondItem="uU6-MW-9i2" secondAttribute="bottom" constant="11" id="qKS-J6-wyj"/>
-                            <constraint firstItem="vin-kz-NbM" firstAttribute="trailing" secondItem="nbI-N9-4P1" secondAttribute="trailing" constant="224" id="sOi-Rp-M3Z"/>
-                            <constraint firstItem="vin-kz-NbM" firstAttribute="trailing" secondItem="XcQ-Fb-iA1" secondAttribute="trailing" constant="16" id="sw5-1T-1H8"/>
-                            <constraint firstItem="eWb-bU-z07" firstAttribute="top" secondItem="gpk-BG-qvb" secondAttribute="bottom" constant="11" id="tLa-Oa-zeg"/>
-                            <constraint firstItem="gpk-BG-qvb" firstAttribute="leading" secondItem="vin-kz-NbM" secondAttribute="leading" id="uY6-cf-zbT"/>
-                            <constraint firstItem="u37-jg-ufw" firstAttribute="trailing" secondItem="vin-kz-NbM" secondAttribute="trailing" id="uZa-zx-KqY"/>
-                            <constraint firstItem="5nI-hD-9ea" firstAttribute="top" secondItem="XcQ-Fb-iA1" secondAttribute="bottom" constant="16.5" id="vOx-Bu-1VH"/>
+                            <constraint firstItem="vgf-9P-UZR" firstAttribute="width" secondItem="kZ9-a1-7YC" secondAttribute="width" constant="-16" id="0Id-8J-Lae"/>
+                            <constraint firstItem="8Hh-db-uJE" firstAttribute="top" secondItem="7ZJ-Zj-iNB" secondAttribute="top" id="27U-DT-7rk"/>
+                            <constraint firstItem="8Hh-db-uJE" firstAttribute="trailing" secondItem="7ZJ-Zj-iNB" secondAttribute="trailing" id="Lup-pv-0ns"/>
+                            <constraint firstItem="8Hh-db-uJE" firstAttribute="bottom" secondItem="7ZJ-Zj-iNB" secondAttribute="bottom" id="NcG-Ds-hah"/>
+                            <constraint firstItem="8Hh-db-uJE" firstAttribute="leading" secondItem="7ZJ-Zj-iNB" secondAttribute="leading" id="q8r-GB-i0N"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="vin-kz-NbM"/>
+                        <viewLayoutGuide key="safeArea" id="7ZJ-Zj-iNB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="About" id="Lw9-iG-mho"/>
+                    <navigationItem key="navigationItem" title="About" id="r6e-bF-J5F"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B1d-cP-P4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXF-qM-Slw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976.8115942028987" y="1190.625"/>
+            <point key="canvasLocation" x="1977" y="1191"/>
         </scene>
         <!--Contact-->
         <scene sceneID="NWB-sP-i2P">
@@ -482,7 +500,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="JBg-rp-CmY" kind="relationship" relationship="rootViewController" id="ysF-Wk-NOh"/>
+                        <segue destination="S4N-XR-fSV" kind="relationship" relationship="rootViewController" id="gSk-tl-I71"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0V-Va-7qb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
